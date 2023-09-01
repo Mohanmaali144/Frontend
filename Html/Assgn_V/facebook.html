@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(222, 225, 227);
+
+        }
+
+        /* .fb-page{
+            position: relative;
+        } */
+        .container {
+            background-color: rgb(100, 100, 165);
+
+            position: sticky;
+            padding-bottom: 6%;
+
+            /* padding-bottom: 10%; */
+
+        }
+
+        .facebook {
+            position: absolute;
+
+            color: rgb(242, 239, 239);
+            font-size: 30px;
+            font-weight: bold;
+            margin-left: 15%;
+            margin-top: 2%;
+
+        }
+
+        .container :nth-child(2) {
+
+            float: right;
+            top: 10%;
+            margin-top: 2%;
+            margin-right: 19%;
+            color: rgb(242, 239, 239);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .container :nth-child(3) {
+            float: right;
+            top: 10%;
+            margin-top: 2%;
+            margin-right: 4.5%;
+            color: rgb(242, 239, 239);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .email {
+            float: right;
+            margin-left: 45%;
+
+        }
+
+        .main :nth-child(1) {
+            margin-top: 3px;
+            margin-right: 26%;
+            size: 20px;
+        }
+
+        .main :nth-child(2) {
+            margin-top: -22px;
+            margin-right: 12%;
+
+        }
+
+        .main :nth-child(4) {
+
+            position: absolute;
+            right: 15%;
+            margin-top: 60px !important;
+            color: rgb(225, 217, 217);
+            cursor: pointer;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+
+
+        .signupbtn {
+            position: absolute;
+            right: 0%;
+            margin-top: 38px !important;
+            background-color: rgb(77, 59, 190);
+            padding: 5px 10px;
+            border: 1px solid rgb(125, 89, 255);
+            color: rgb(249, 249, 249);
+            border: none;
+            cursor: pointer;
+            box-shadow: 19px rgb(0, 0, 0);
+            box-shadow: 1px 1px 1px 1px #201c1c;
+        }
+
+        .signupbtn:hover {
+
+            background-color: rgb(221, 236, 208);
+            color: black;
+        }
+
+
+        /* creat account  */
+
+        .div {
+            display: inline-block;
+            margin-top: 2%;
+            float: right;
+            margin-right: 8%;
+            text-decoration: none;
+
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+        }
+
+        #firstname {
+            background-color: rgb(255, 255, 255);
+            padding-top: 10px;
+            padding-right: 12px;
+            height: 18px;
+            width: 30%;
+            border: none;
+            border-radius: 4px;
+            margin-bottom: 2%;
+            text-align: center;
+
+        }
+
+        div li {
+            list-style: none;
+        }
+
+        #Lastname {
+            background-color: rgb(255, 255, 255);
+            padding-top: 10px;
+            padding-right: 12px;
+            height: 18px;
+            width: 30%;
+            border: none;
+            border-radius: 4px;
+            margin-bottom: 2%;
+            text-align: center;
+        }
+
+        .input {
+            background-color: rgb(255, 255, 255);
+            padding-top: 10px;
+            padding-right: 12px;
+            height: 18px;
+            width: 64%;
+            border: none;
+            border-radius: 4px;
+            margin-bottom: 2%;
+            text-align: center;
+        }
+
+        #button {
+
+            background-color: rgb(121, 218, 24);
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 10px;
+            height: 35px;
+            width: 40%;
+            border: none;
+            border-radius: 4px;
+            margin-top: 2%;
+            margin-bottom: 2%;
+            text-align: center;
+            font-size: 15px;
+            font-weight: bold;
+            color: white;
+            cursor:pointer;
+        }
+        #button:hover{
+            background-color: rgb(52, 79, 255);
+        }
+
+        #fb {
+            font-size: 60px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: rgb(52, 79, 255);
+            position: absolute;
+            left: 13%;
+            top: 42%;
+           
+        }
+        .paragraph {
+            font-size: 30px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+           
+            color: rgb(0, 0, 0);
+            position: absolute;
+            left: 13%;
+            top: 60%;
+        }
+
+        /*------------------------------------------------------------------------------------ */
+    </style>
+</head>
+
+<body>
+    <div class="fb-page">
+        <div class="container">
+
+            <span class="facebook">facebook</span>
+            <span>password</span>
+            <span> Email or Phone </span> <br>
+
+            <div class="main">
+                <span class="email"> <input type="email"> </span>
+                <span class="password"> <input type="password"> </span>
+                <button type="submit" class="signupbtn">Sign Up</button>
+                <span> forgate password ? </span> <br>
+
+            </div>
+        </div>
+
+
+        <!-- ----------------------------------------------- -->
+
+
+        <div class="div">
+            <h1>Create an account</h1><br>
+            <p>It's quick and easy.</p><br>
+            <li>
+                <input type="name" placeholder="First Name" id="firstname">
+                <input type="text" placeholder="Last name" id="Lastname">
+            </li>
+
+            <li><input type="text" placeholder="Mobile number or email address" class="input"></li>
+
+            <li><input type="password" placeholder="New password" class="input"></li>
+
+            <li><input type="password" placeholder="Conform password" class="input"></li>
+            <p> Date of Birth</p>
+            <li> <input type="date" class="input"></li>
+
+            <li><input type="radio" name="gender">Female <input type="radio" name="gender">Male</li><br>
+
+            <li class="terms">By clicking Create an account, you agree to our <a href="">Terms</a> and that <br>you have
+                read our <a href="">Data Policy</a>, including our <a href="">Cookie Use</a> </li>
+
+            <li><input id="button" type="submit" value="Create account"></li>
+
+        </div>
+        <p id="fb">facebook</p>
+        <p class="paragraph"> Facebook helps you connect and share <br>with the people in your life.</p>
+    </div>
+</body>
+
+</html>

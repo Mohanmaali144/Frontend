@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            *{
+                margin:0px;
+                padding:0px;
+                box-sizing: border-box;
+
+            }
+            .container{
+                width: 75%;
+                height: 100vh;
+                margin: auto;
+                position: reletive;  
+                /* background-color: black; */
+                /* border:2px solid black; */
+
+            }
+            .head{
+            height:55px;
+            background-color: rgb(229, 242, 47);
+            font-size: 28px;
+            text-align:center;
+            color: #000000;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            font-weight: bold;
+            position: relative;
+            }
+            .head span{
+                position: absolute;
+                top: 50%;
+                left:50%;
+                transform: translate(-50%,-50%);
+            }
+            .row{
+                height: 50px;
+            }
+            .box{
+                width:50px;
+                height:50px;
+                border:1px solid black;
+                position:relative;
+                font-weight: bold;
+                color:white;
+                background-color :rgb(245, 114, 57);
+            }
+            .row :nth-child(2)
+            {
+                background-color: rgb(196, 212, 226);
+            }
+            .row .box span{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
+            .float-direction-left{
+                float:left;
+            }
+            .float-direction-right{
+                float: right;
+            }
+            .width{
+                width:11.4%;
+                background-color: rgb(122, 160, 240);
+            }
+            .margin{
+                 width:89%;
+                margin: auto ! important;
+            }
+            .w{
+                width:12.6% !important;
+            }
+            .yelloww{
+                background-color:rgb(242, 246, 125);
+            }
+            .blue{
+                background-color: green;
+            }
+            .green{
+                background-color:gray(20, 230, 149, 0.89) ;
+            }
+            .voilet{
+                background-color: rgb(241, 106, 163);
+            }
+            .color{
+                background-color: pink(70, 110, 155, 0.753);
+            }
+            .brown{
+                background-color:rgb(190, 21, 92);
+            }
+            .yellow{
+                background-color:orange(39, 100%, 50%);
+            }
+            .cb{
+                background-color: skyblue(0, 255, 255, 0.89);
+            } 
+            .p{
+                background-color: rgb(13, 243, 13);
+            }
+            .o{
+                background-color: rgb(248, 73, 9);
+            }
+            .g{
+                background-color:rgb(180, 177, 178);
+            }
+            .og{
+
+            }
+    </style>
+   </head>
+<body>
+    <div class="container">
+        <div class="head">
+            <span>The Periodic Table</span>
+        </div>
+        <div class="row">
+            <div class="box green float-direction-left"><span>1<br>H</span></div>
+            <div class="box green float-direction-right"><span>2<br>He</span></div>
+        </div>
+        <div class="row ">
+            <div class="box blue float-direction-left"><span>3<br>Li</span></div>
+            <div class="box voilet float-direction-left"><span>4<br>Be</span></div>
+            <div class="box green float-direction-right"><span>10<br>Ne</span></div>
+            <div class="box p float-direction-right"><span>9<br>F</span></div>
+            <div class="box cb float-direction-right"><span>8<br>O</span></div>
+            <div class="box cb float-direction-right"><span>7<br>N</span></div>
+            <div class="box cb float-direction-right"><span>6<br>C</span></div>
+            <div class="box yellow float-direction-right"><span>5<br>B</span></div>
+
+        </div>
+        <div class="row ">
+            <div class="box blue float-direction-left"><span>11<br>Na</span></div>
+            <div class="box voilet float-direction-left"><span>12<br>Mg</span></div>
+            <div class="box green float-direction-right"><span>18<br>Ar</span></div>
+            <div class="box p float-direction-right"><span>17<br>Cl</span></div>
+            <div class="box cb float-direction-right"><span>16<br>S</span></div>
+            <div class="box cb float-direction-right"><span>15<br>P</span></div>
+            <div class="box yellow float-direction-right"><span>14<br>Si</span></div>
+            <div class="box o float-direction-right"><span>13<br>Al</span></div>
+        </div>
+        <div class="row ">
+            <div class="box blue float-direction-left"><span>19<br>K</span></div>
+            <div class="box voilet float-direction-left"><span>20<br>Ca</span></div>
+            <div class="box red float-direction-left width"><span>21<br>Sc</span></div>
+            <div class="box red float-direction-left"><span>22<br>Ti</span></div>
+            <div class="box red float-direction-left"><span>23<br>V</span></div>
+            <div class="box red float-direction-left"><span>24<br>Cr</span></div>
+            <div class="box red float-direction-left"><span>25<br>Mn</span></div>
+            <div class="box red float-direction-left"><span>26<br>Fe</span></div>
+            <div class="box red float-direction-left"><span>27<br>Co</span></div>
+            <div class="box red float-direction-left"><span>28<br>Ni</span></div>
+            <div class="box red float-direction-left"><span>29<br>Cu</span></div>
+            <div class="box red float-direction-left"><span>30<br>Zn</span></div>
+            <div class="box o float-direction-left"><span>31<br>Ga</span></div>
+            <div class="box yellow float-direction-left"><span>32<br>Ge</span></div>
+            <div class="box yellow float-direction-left"><span>33<br>As</span></div>
+            <div class="box cb float-direction-left"><span>34<br>Se</span></div>
+            <div class="box  p float-direction-left"><span>35<br>Br</span></div>
+            <div class="box green float-direction-left"><span>36<br>Kr</span></div>
+        </div>
+        <div class="row">
+            <div class="box blue float-direction-left"><span>37<br>Rb</span></div>
+            <div class="box voilet float-direction-left"><span>38<br>Sr</span></div>
+            <div class="box red float-direction-left width"><span>39<br>Y</span></div>
+            <div class="box red  float-direction-left"><span>40<br>Zr</span></div>
+            <div class="box red float-direction-left"><span>41<br>Nb</span></div>
+            <div class="box red float-direction-left"><span>42<br>Mo</span></div>
+            <div class="box red float-direction-left"><span>43<br>Tc</span></div>
+            <div class="box red float-direction-left"><span>44<br>Ru</span></div>
+            <div class="box red float-direction-left"><span>45<br>Rh</span></div>
+            <div class="box red float-direction-left"><span>46<br>Pd</span></div>
+            <div class="box red float-direction-left"><span>47<br>Ag</span></div>
+            <div class="box red float-direction-left"><span>48<br>Cd</span></div>
+            <div class="box o float-direction-left"><span>49<br>In</span></div>
+            <div class="box o float-direction-left"><span>50<br>Sn</span></div>
+            <div class="box yellow float-direction-left"><span>51<br>Sb</span></div>
+            <div class="box yellow float-direction-left"><span>52<br>Te</span></div>
+            <div class="box p float-direction-left"><span>53<br>I</span></div>
+            <div class="box green float-direction-left"><span>54<br>Xe</span></div>
+        </div>
+        <div class="row ">
+            <div class="box blue float-direction-left"><span>55<br>Cs</span></div>
+            <div class="box voilet float-direction-left"><span>56<br>Ba</span></div>
+            <div class="box red float-direction-left width"><span>57-71</span></div>
+            <div class="box red float-direction-left"><span>72<br>Hf</span></div>
+            <div class="box red float-direction-left"><span>73<br>Ta</span></div>
+            <div class="box red float-direction-left"><span>74<br>W</span></div>
+            <div class="box red float-direction-left"><span>75<br>Re</span></div>
+            <div class="box red float-direction-left"><span>76<br>Os</span></div>
+            <div class="box red float-direction-left"><span>77<br>Ir</span></div>
+            <div class="box red float-direction-left"><span>78<br>Pt</span></div>
+            <div class="box red float-direction-left"><span>79<br>Au</span></div>
+            <div class="box red float-direction-left"><span>80<br>Hg</span></div>
+            <div class="box o float-direction-left"><span>81<br>Tl</span></div>
+            <div class="box o float-direction-left"><span>82<br>Pb</span></div>
+            <div class="box o float-direction-left"><span>83<br>Bi</span></div>
+            <div class="box yellow float-direction-left"><span>84<br>Po</span></div>
+            <div class="box p float-direction-left"><span>85<br>At</span></div>
+            <div class="box green float-direction-left"><span>86<br>Rn</span></div>
+        </div>
+        <div class="row">
+            <div class="box blue float-direction-left"><span>87<br>Fr</span></div>
+            <div class="box voilet float-direction-left"><span>88<br>Ra</span></div>
+            <div class="box red float-direction-left width"><span>89-103</span></div>
+            <div class="box red float-direction-left"><span>104<br>Rf</span></div>
+            <div class="box red float-direction-left"><span>105<br>Db</span></div>
+            <div class="box red float-direction-left"><span>106<br>Sg</span></div>
+            <div class="box red float-direction-left"><span>107<br>Bh</span></div>
+            <div class="box red float-direction-left"><span>108<br>Hs</span></div>
+            <div class="box red float-direction-left"><span>109<br>Mt</span></div>
+            <div class="box red float-direction-left"><span>110<br>Ds</span></div>
+            <div class="box red float-direction-left"><span>111<br>Rg</span></div>
+            <div class="box red float-direction-left"><span>112<br>Cn</span></div>
+            <div class="box g float-direction-left"><span>113<br>Nh</span></div>
+            <div class="box g float-direction-left"><span>114<br>Fl</span></div>
+            <div class="box g float-direction-left"><span>115<br>Mc</span></div>
+            <div class="box g float-direction-left"><span>116<br>Lv</span></div>
+            <div class="box g float-direction-left"><span>117<br>Ts</span></div>
+            <div class="box g float-direction-left" class="og"><span>118<br>Og</span></div>
+        </div>
+        <div class="row  margin">
+            
+            <div class="box color float-direction-right"><span>71<br>Lu</span></div>
+            <div class="box color float-direction-right"><span>70<br>Yb</span></div>
+            <div class="box color float-direction-right"><span>69<br>Tm</span></div>
+            <div class="box color float-direction-right"><span>68<br>Er</span></div>
+            <div class="box color float-direction-right"><span>67<br>Ho</span></div>
+            <div class="box color float-direction-right"><span>66<br>Dy</span></div>
+            <div class="box color float-direction-right"><span>65<br>Tb</span></div>
+            <div class="box color float-direction-right"><span>64<br>Gd</span></div>
+            <div class="box color float-direction-right"><span>63<br>Eu</span></div>
+            <div class="box color float-direction-right"><span>62<br>Sm</span></div>
+            <div class="box color float-direction-right"><span>61<br>Pm</span></div>
+            <div class="box color float-direction-right"><span>60<br>Nd</span></div>
+            <div class="box color float-direction-right"><span>59<br>Pr</span></div>
+            <div class="box color float-direction-right"><span>58<br>Ce</span></div>
+            <div class="box color float-direction-right w width"><span>57<br>La</span></div>
+        </div>
+        <div class="row margin">
+            
+            <div class="box brown float-direction-right"><span>103<br>Lr</span></div>
+            <div class="box brown float-direction-right"><span>102<br>No</span></div>
+            <div class="box brown float-direction-right"><span>101<br>Md</span></div>
+            <div class="box brown float-direction-right"><span>100<br>Fm</span></div>
+            <div class="box brown float-direction-right"><span>99<br>Es</span></div>
+            <div class="box brown float-direction-right"><span>98<br>Cf</span></div>
+            <div class="box brown float-direction-right"><span>97<br>Bk</span></div>
+            <div class="box brown float-direction-right"><span>96<br>Cm</span></div>
+            <div class="box brown float-direction-right"><span>95<br>Am</span></div>
+            <div class="box brown float-direction-right"><span>94<br>Pu</span></div>
+            <div class="box brown float-direction-right"><span>93<br>Np</span></div>
+            <div class="box brown float-direction-right"><span>92<br>U</span></div>
+            <div class="box brown float-direction-right"><span>91<br>Pa</span></div>
+            <div class="box brown float-direction-right"><span>90<br>Th</span></div>
+            <div class="box brown float-direction-right w width"><span>89<br>Ac</span></div>
+        </div>
+
+
+
+
+    </div>
+    
+</body>
+</html>

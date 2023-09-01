@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)http://127.0.0.1:5500/AboutTags/myweb/myweb1.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Document_files/myweb.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- header war -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="http://127.0.0.1:5500/AboutTags/myweb/myweb1.html">Home</a>
+            <a href="http://127.0.0.1:5500/AboutTags/myweb/aboutpage.html">About</a>
+            <a href="http://127.0.0.1:5500/AboutTags/myweb/contectpage.html">Contect</a>
+            <a href="http://127.0.0.1:5500/AboutTags/myweb/accountpage.html">Account</a>
+        </nav>
+        <hr>
+    </header>
+
+    <!-- main/section war-->
+
+    <main>
+        <section>
+            <fieldset class="fieldset">
+                <legend id="name">Mohan Maali</legend>
+                <h1 id="welcome">WELCOM TO MY PROFILE</h1>
+            </fieldset>
+            <p id="webtext"> <span style="color: rgb(100, 21, 127);">Life</span> is what happens<span style="color: rgb(100, 21, 127);"> <br>when you're</span> busy <br> making other <span style="color: rgb(100, 21, 127);">plans..</span></p>
+            <img id="photo1" src="./Document_files/colagep.jpg" alt="">
+            <span id="contect">Contect with us</span>
+           <a href="http://127.0.0.1:5500/AboutTags/myweb/contectpage.html">  <img id="whatsapp" src="./Document_files/whatsapp.svg" alt="Image are not loded"></a>
+           <a href="http://127.0.0.1:5500/AboutTags/myweb/contectpage.html"> <img id="email" src="./Document_files/email.svg" alt="Image are not loded"> </a>
+        </section>
+    </main>
+
+    <!-- footer war -->
+    <footer>
+        <!-- <img id="whatsapp" src="whatsapp.svg" alt="Image are not loded"> -->
+    </footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>

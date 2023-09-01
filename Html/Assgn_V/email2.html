@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email</title>
+
+    <style>
+        body {
+            background-color: rgb(252, 252, 252);
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .box {
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 3px solid rgb(216, 211, 211);
+            border-radius: 8px;
+            width: 35%;
+            height: 550px;
+
+        }
+
+        .box img {
+            position: absolute;
+            height: 30px;
+            top: 8%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .box h1 {
+            position: absolute;
+            top: 15%;
+            left: 15%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            border: none;
+            font-weight: normal;
+        }
+
+        .box p {
+            position: absolute;
+            top: 23%;
+            left: 35%;
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .box li {
+            list-style: none;
+        }
+
+        .box li input {
+
+            position: absolute;
+            padding: 5px;
+            width: 75%;
+            height: 40px;
+            margin-left: 8%;
+            border-radius: 5px;
+            list-style: none;
+            border: 1px solid rgb(208, 203, 203);
+            font-size: 15px;
+        }
+
+        .firstname {
+            top: 40%;
+        }
+
+        .lastname {
+            top: 55%;
+        }
+
+        .nextbutton {
+            position: absolute;
+            top: 70%;
+            left: 65%;
+            padding-top: 2%;
+            padding-left: 4%;
+            padding-right: 4%;
+            padding-bottom: 2%;
+            color: azure;
+            border: none;
+            border-radius: 5px;
+            background-color: rgb(57, 57, 238);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 15px;
+
+        }
+        .nextbutton:hover{
+
+            background-color: rgb(98, 137, 221);
+            color: black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="box">
+        <img src="google.png" alt="loding">
+        <h1>create a Google Account</h1>
+        <p>Enter your name</p>
+
+        <li>
+            <input class="firstname" type="text" placeholder="First name">
+        </li>
+        <li> 
+            <input class="lastname" type="text" placeholder="Last name (optional)"> 
+        </li>
+
+        <input class="nextbutton" type="submit" placeholder="Next">
+    </div>
+</body>
+
+</html>

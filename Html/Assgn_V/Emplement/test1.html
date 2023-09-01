@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-page</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+           
+        }
+
+        #navbar {
+            position: relative;
+            /* border: 2px solid rgb(245, 30, 30); */
+            background-color: rgb(28, 37, 45);
+            padding-bottom: 3%;
+            color: beige;
+            padding-bottom: 5%;
+
+        }
+
+        .amzpng img {
+
+            position: absolute;
+            height: 40px;
+            width: 10%;
+            left: 2%;
+            top: 25%;
+        }
+
+        .locpng img {
+            position: absolute;
+            height: 25px;
+            width: 17%;
+            left: -18%;
+            top: 12px;
+
+
+        }
+
+        .locpng {
+            position: absolute;
+            /* height: 38px; */
+            width: 12%;
+            top: 14px;
+            left: 16%;
+            /* border: 2px solid red; */
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        #amazon-option {
+            /* border: 2px solid red; */
+            position: absolute;
+            height: 40px;
+            width: 11%;
+            top: 12px;
+            left: 29%;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            border-bottom-left-radius: 8px;
+            border-top-left-radius: 8px;
+            background-color: rgb(224, 224, 224);
+        }
+
+        .search input {
+            position: absolute;
+            height: 11%;
+            width: 25%;
+            top: 12px;
+            left: 39.9%;
+            padding-top: 18px;
+            padding-bottom: 18px;
+            /* border-radius: 8px;
+            border-top-left-radius: 8px; */
+            /* border: 2px solid red; */
+        }
+
+        .searchimg img {
+            position: absolute;
+            height: 48.5%;
+            width: 3%;
+            top: 12.5px;
+            left: 64.8%;
+            padding-top: 1px;
+            padding-bottom: 7px;
+            /* border: 2px solid red; */
+            background-color: rgb(253, 173, 11);
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+        #language {
+
+            position: absolute;
+            left: 71%;
+            top: 25%;
+            width: 4%;
+            /* border: 2px solid greenyellow; */
+            background: none;
+            color: rgb(229, 229, 229);
+            padding-top: 5px;
+            padding-bottom: 5px;
+            font-weight: bold;
+            border: none;
+            /* border: 0px; */
+            /* padding-bottom: 3px; */
+            /* border: 1px; */
+            /* background-color: blueviolet; */
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .flag img {
+            position: absolute;
+            height: 35%;
+            width: 2%;
+            top: 20px;
+            left: 68.8%;
+            /* border: 2px solid greenyellow; */
+            background: none;
+            color: rgb(229, 229, 229);
+            /* padding-top: px;
+            padding-bottom: 1px; */
+            font-weight: bold;
+        }
+
+
+        .signin {
+            position: absolute;
+            width: 8%;
+            top: 14px;
+            left: 76%;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        .orders {
+            position: absolute;
+            width: 8%;
+            top: 14px;
+            left: 85%;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 15px;
+        }
+
+        .cart img {
+            position: absolute;
+            height: 70%;
+            width: 5%;
+            top: 5px;
+            left: 90%;
+            /* border: 2px solid greenyellow; */
+            background: none;
+            color: rgb(229, 229, 229);
+            font-weight: bold;
+        }
+
+        .cart2 {
+            position: absolute;
+            width: 8%;
+            top: 25px;
+            left: 94%;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        #navbar2 {
+            position: relative;
+            /* border: 2px solid rgb(245, 30, 30); */
+            background-color: rgb(55, 53, 60);
+            color: beige;
+            padding-bottom: 3.2%;
+            top: 20%;
+            /* margin-top: 2px; */
+
+        }
+
+        .menu img {
+            position: absolute;
+            height: 25px;
+            width: 2%;
+            left: 1.4%;
+            top: 16%;
+
+        }
+
+        .all {
+            position: absolute;
+            left: 3.9%;
+            top: 25%;
+            font-weight: bold;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+        }
+
+        #bar {
+            position: absolute;
+            top: 27%;
+            width: 80%;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            left: 5%;
+            font-size: 14px;
+        }
+
+        #bar span {
+            margin-left: 1.5%;
+        }
+
+        #bar span:hover {
+            border: 2px solid rgb(247, 236, 117);
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+
+        #prime {
+            background: none;
+            color: beige;
+            font-size: 14px;
+            width: 80;
+            border: none;
+            left: 10%;
+            top: 27%;
+        }
+
+        #prime:hover {
+            border: 2px solid rgb(247, 236, 117);
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 5px;
+        }
+        .box-img img{
+           
+           position: absolute;
+            background: none;
+            color: beige;
+            width: 90;
+            height: 40px;
+            border: none;
+            left: 68%;
+            top: 0%;
+        }
+        .box-text{
+            position: absolute;
+            background: none;
+            color: beige;
+            width: 90;
+            height: 40px;
+            border: none;
+            left: 72%;
+            top: 22%;
+            font-weight: 700;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .body-img{
+            position: relative;
+            height: 500px;
+            width: 100%;
+        }
+/* ------------------------------------------------------------------------------------- */
+        .imeges{
+            position: absolute;
+            /* border: 2px solid blueviolet; */
+            width: 22%;
+            top:55%;
+            left: 10%;
+            padding-bottom: 25%;
+            background-color: white;
+            color: black;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        .imeges :nth-child(1){
+            position: absolute;
+            font-weight: bold;
+            left: 3%;
+            font-size: 12px;
+            top: 3%;
+        }
+        .imeges :nth-child(3){
+            position: absolute;
+            font-weight: bold;
+            left: 3%;
+            font-size: 12px;
+            top: 35%;
+        }
+        .imeges :nth-child(5){
+            position: absolute;
+            font-weight: bold;
+            left: 3%;
+            top: 75%;
+            font-size: 12px;
+        }
+        .imeges :nth-child(7){
+            position: absolute;
+            font-weight: bold;
+            left: 50%;
+            font-size: 12px;
+            top: 35%;
+        }
+        .imeges :nth-child(9){
+            position: absolute;
+            font-weight: bold;
+            left: 50%;
+            top: 75%;
+            font-size: 12px;
+        }
+
+
+        .imeges :nth-child(2){
+            position: absolute;
+            /* width: %; */
+            height: 70px;
+            top:10%;
+            left: 3%;
+            padding-bottom: 25%;
+        }
+        .imeges :nth-child(4){
+            position: absolute;
+            height: 70px;
+            top:10%;
+            left: 50%;
+            padding-bottom: 25%;
+        }
+        .imeges :nth-child(6){
+            position: absolute;
+           height: 70px;
+            top:50%;
+            left: 3%;
+        }
+        .imeges :nth-child(8){
+            position: absolute;
+           height: 70px;
+            top:50%;
+            left: 50%;
+        }
+
+
+/* -------------------------------------------------------------------------- */
+        .imeges2{
+            position: absolute;
+            /* border: 2px solid blueviolet; */
+            width: 22%;
+            top:55%;
+            left: 40%;
+            padding-bottom: 25%;
+            background-color: white;
+            color: black;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        
+            .imeges2 :nth-child(1){
+            position: absolute;
+            font-weight: bold;
+            left: 3%;
+            font-size: 12px;
+            top: 3%;
+        }
+        .imeges2 :nth-child(3){
+            position: absolute;
+            font-weight: bold;
+            left: 3%;
+            font-size: 12px;
+            top: 35%;
+        }
+        .imeges2 :nth-child(5){
+            position: absolute;
+            font-weight: bold;
+            left: 3%;
+            top: 75%;
+            font-size: 12px;
+        }
+        .imeges2 :nth-child(7){
+            position: absolute;
+            font-weight: bold;
+            left: 50%;
+            font-size: 12px;
+            top: 35%;
+        }
+        .imeges2 :nth-child(9){
+            position: absolute;
+            font-weight: bold;
+            left: 50%;
+            top: 75%;
+            font-size: 12px;
+        }
+
+
+        .imeges2 :nth-child(2){
+            position: absolute;
+            /* width: %; */
+            height: 70px;
+            top:10%;
+            left: 3%;
+            padding-bottom: 25%;
+        }
+        .imeges2 :nth-child(4){
+            position: absolute;
+            height: 70px;
+            top:10%;
+            left: 50%;
+            padding-bottom: 25%;
+        }
+        .imeges2 :nth-child(6){
+            position: absolute;
+           height: 70px;
+            top:50%;
+            left: 3%;
+        }
+        .imeges2 :nth-child(8){
+            position: absolute;
+           height: 70px;
+            top:50%;
+            left: 50%;
+        }
+
+/* --------------------------------------------------------------------------------------- */
+        .imeges3{
+            position: absolute;
+            /* border: 2px solid blueviolet; */
+            width: 22%;
+            top:55%;
+            left: 70%;
+            padding-bottom: 25%;
+            background-color: white;
+            color: black;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        
+            .imeges3 :nth-child(1){
+            position: absolute;
+            font-weight: bold;
+            left: 3%;
+            font-size: 12px;
+            top: 3%;
+        }
+        .imeges3 :nth-child(3){
+            position: absolute;
+            font-weight: bold;
+            left: 3%;
+            font-size: 12px;
+            top: 35%;
+        }
+        .imeges3 :nth-child(5){
+            position: absolute;
+            font-weight: bold;
+            left: 3%;
+            top: 75%;
+            font-size: 12px;
+        }
+        .imeges3 :nth-child(7){
+            position: absolute;
+            font-weight: bold;
+            left: 50%;
+            font-size: 12px;
+            top: 35%;
+        }
+        .imeges3 :nth-child(9){
+            position: absolute;
+            font-weight: bold;
+            left: 50%;
+            top: 75%;
+            font-size: 12px;
+        }
+
+
+        .imeges3 :nth-child(2){
+            position: absolute;
+            /* width: %; */
+            height: 70px;
+            top:10%;
+            left: 3%;
+            padding-bottom: 25%;
+        }
+        .imeges3 :nth-child(4){
+            position: absolute;
+            height: 70px;
+            top:10%;
+            left: 50%;
+            padding-bottom: 25%;
+        }
+        .imeges3 :nth-child(6){
+            position: absolute;
+           height: 70px;
+            top:50%;
+            left: 3%;
+        }
+        .imeges3 :nth-child(8){
+            position: absolute;
+           height: 70px;
+            top:50%;
+            left: 50%;
+        }
+   
+   </style>
+
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <span class="amzpng"> <img src="Amazon2.png" alt=""></span>
+            <span class="locpng"> <img src="loc.png" alt=""> Hello <br>
+                <span> <b>Select your address</b></span></span>
+
+            <div id="div">
+
+                <select id="amazon-option">
+                    <option value="1">Amazon-Fashion-1</option>
+                    <option value="2">Amazon-Fashion-2</option>
+                    <option value="3">Amazon-Fashion-3</option>
+                    <option value="4">Amazon-Fashion-4</option>
+                    <option value="5">Amazon-Fashion-5</option>
+                    <option value="6">Amazon-Fashion-6</option>
+                    <option value="7">Amazon-Fashion-7</option>
+                    <option value="8">Amazon-Fashion-8</option>
+                    <option value="9">Amazon-Fashion-9</option>
+                    <option value="10">Amazon-Fashion-10</option>
+                    <option value="11">Amazon-Fashion-11</option>
+                    <option value="12">Amazon-Fashion-12</option>
+                    <option value="13">Amazon-Fashion-13</option>
+                    <option value="14">Amazon-Fashion-14</option>
+                    <option value="15">Amazon-Fashion-15</option>
+                    <option value="16">Amazon-Fashion-16</option>
+                    <option value="17">Amazon-Fashion-17</option>
+                    <option value="18">Amazon-Fashion-18</option>
+                    <option value="19">Amazon-Fashion-19</option>
+                    <option value="20">Amazon-Fashion-20</option>
+                </select>
+
+                <span class="search"><input type="search" placeholder="Search Amazon.in"> </span>
+                <span class="searchimg"> <img src="search2.png" alt=""></span>
+                <span class="flag"> <img src="flag.png" alt="flag img"></span>
+                <select id="language">
+                    <option value="1">EN-1</option>
+                    <option value="2">Amazon-Fashion-2</option>
+                    <option value="3">Amazon-Fashion-3</option>
+                    <option value="4">Amazon-Fashion-4</option>
+                    <option value="5">Amazon-Fashion-5</option>
+                    <option value="6">Amazon-Fashion-6</option>
+                    <option value="7">Amazon-Fashion-7</option>
+                    <option value="8">Amazon-Fashion-8</option>
+                    <option value="9">Amazon-Fashion-9</option>
+                    <option value="10">Amazon-Fashion-10</option>
+                    <option value="11">Amazon-Fashion-11</option>
+                    <option value="12">Amazon-Fashion-12</option>
+                    <option value="13">Amazon-Fashion-13</option>
+                    <option value="14">Amazon-Fashion-14</option>
+                    <option value="15">Amazon-Fashion-15</option>
+                    <option value="16">Amazon-Fashion-16</option>
+                    <option value="17">Amazon-Fashion-17</option>
+                    <option value="18">Amazon-Fashion-18</option>
+                    <option value="19">Amazon-Fashion-19</option>
+                    <option value="20">Amazon-Fashion-20</option>
+                </select>
+
+                <span class="signin"> <small>Hello,sign in</small> <br>
+                    <b>Account & lists</b></span>
+
+                <span class="orders"> <small>Returns</small> <br>
+                    <b> & Orders</b></span>
+
+                <span class="cart"> <img src="cart3.png" alt="cartl logo"></span>
+                <span class="cart2"> Cart</span>
+            </div>
+        </nav>
+
+        <nav id="navbar2">
+
+            <div class="menu-all">
+                <span class="menu"> <img src="menu.png" alt="manu"></span>
+                <span class="all">All</span>
+            </div>
+
+            <div id="bar">
+                <span>Amazon miniTv </span>
+                <span>Sell</span>
+                <span>Best Sellers</span>
+                <span>Today's Deal</span>
+                <span>Mobile</span>
+                <span>New Releases</span>
+                <span>Customer Service</span>
+                <select name="prime " id="prime">
+                    <option value="prime">prime 1</option>
+                    <option value="prime">prime 2</option>
+                    <option value="prime">prime 3</option>
+                    <option value="prime">prime 4</option>
+                    <option value="prime">prime 5</option>
+                    <option value="prime">prime 6</option>
+                    <option value="prime">prime 7</option>
+                    <option value="prime">prime 8</option>
+                    <option value="prime">prime 9</option>
+                    <option value="prime">prime 10</option>
+                    <option value="prime">prime 11</option>
+                </select>
+            </div>
+            <span class="box-img"> <img src="box2.png" alt=""></span>
+            <span class="box-text">Shoping made Easy | Download the app </span>
+        </nav>
+    </header>
+    
+    <img  class="body-img" src="back.jpg" alt="">
+
+    <div class="imeges">
+        <span>Up to 60% of | Style for men</span>
+        <img src="men.jpg" alt="men img">
+        <span>clothing</span>
+        <img src="shoos.jpg" alt="shoos img">
+        <span>watches</span>
+        <img src="watch.jpg" alt="shoos img">
+        <span>Footwear</span>
+        <img src="bag.jpg" alt="shoos img">
+        <span>Bag & luggage</span>
+    </div>
+
+
+    <div class="imeges2">
+        <span>Up to 60% of | Style for men</span>
+        <img src="men.jpg" alt="men img">
+        <span>clothing</span>
+        <img src="shoos.jpg" alt="shoos img">
+        <span>watches</span>
+        <img src="watch.jpg" alt="shoos img">
+        <span>Footwear</span>
+        <img src="bag.jpg" alt="shoos img">
+        <span>Bag & luggage</span>
+    </div>
+
+    <div class="imeges3">
+        <span>Up to 60% of | Style for men</span>
+        <img src="men.jpg" alt="men img">
+        <span>clothing</span>
+        <img src="shoos.jpg" alt="shoos img">
+        <span>watches</span>
+        <img src="watch.jpg" alt="shoos img">
+        <span>Footwear</span>
+        <img src="bag.jpg" alt="shoos img">
+        <span>Bag & luggage</span>
+    </div>
+
+
+
+</body>
+
+</html>
