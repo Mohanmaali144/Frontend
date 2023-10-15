@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function focusf() {
+            document.getElementById("fc").style.background = "black";
+            document.getElementById("fc").style.color = "white";
+        }
+
+        function textm() {
+            document.write("Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti totam omnis, fugit beatae saepe porratione repellat ex aut qui dignissimos nulla et aliquam ");
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <input id="fc" type="text" onfocus="focusf()">
+
+
+
+    <!-- <button id="btn" onclick="textm()">click</button> -->
+
+    <button onclick="document.getElementById('para').innerHTML = textm()">date</button>
+
+    <div style="height: 100px; width: 200px; color: blueviolet;" id="para">
+
+    </div>
+
+</body>
+
+</html>

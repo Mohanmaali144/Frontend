@@ -1,0 +1,297 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "IBM Plex Sans", sans-serif;
+
+}
+
+body {
+    background-color: #f0f4f5;
+    overflow: hidden;
+}
+
+/* Navigation bar */
+nav {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    margin: 20px 60px;
+}
+
+nav img{
+    width: 150px;
+    height: 50px;
+}
+nav ul {
+    display: flex;
+    width: 30%;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 600;
+}
+
+nav ul li a:hover{
+    position: relative;
+    bottom: 3px;
+    color: rgb(74, 74, 243);
+    text-decoration: underline;
+}
+
+nav ul li a:active{
+    color: rgb(255, 0, 98);
+}
+
+
+/* main section */
+
+main {
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    /* gap: 20px; */
+}
+
+.hospital-description{
+    width: 50%;
+    text-align: center;
+}
+
+main div h1{
+    font-size: 35px;
+    font-weight: 700;
+    /* text-align: center; */
+    margin-top: 80px;
+    margin-bottom: 15px;
+    color: #20BC7E;
+
+}
+
+main div p {
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* achievement */
+
+.achievement{
+    display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 50px;
+  margin-top: -100px;
+}
+
+.card{
+    width: 200px;
+    height: 100px;
+    gap: 10px;
+    padding: 15px  50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+.card span{
+    color: #20BC7E;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.card  p{
+    font-size: 22px;
+    font-weight: 500;
+
+}
+
+/* ------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 360px) and (max-width: 720px) {
+  
+
+
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+      font-family: "IBM Plex Sans", sans-serif;
+  
+  }
+  
+  body {
+      background-color: #f0f4f5;
+      /* overflow: hidden; */
+  }
+  
+  /* Navigation bar */
+  nav {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: space-between;
+      /* margin: 10px 60px; */
+  }
+  
+  nav img{
+    width: 100px;
+    height: 50px;
+    margin-left: -45px;
+    margin-top: -10px;
+  }
+  
+  nav ul {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      margin-left: 10px;
+  
+      justify-content: space-between;
+      font-size: 15px;
+  }
+  
+  nav ul li {
+      list-style: none;
+  
+  }
+  
+  nav ul li a {
+      text-decoration: none;
+      color: #000000;
+      font-weight: 600;
+      margin-left: 25px;
+  
+  }
+  
+  nav ul li a:hover{
+      position: relative;
+      bottom: 3px;
+      color: rgb(134, 134, 238);
+      text-decoration: underline;
+  }
+  
+  nav ul li a:active{
+      color: rgb(255, 0, 98);
+  }
+
+  /* main section */
+
+main {
+    margin-top: -60px;
+    /* height: 1050px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* justify-content: space-around; */
+    /* gap: 20px; */
+}
+
+.hospital-description{
+    width: 50%;
+    /* text-align: center; */
+}
+
+main div h1{
+    font-size: 35px;
+    font-weight: 700;
+    /* text-align: center; */
+    margin-top: -100px;
+    margin-bottom: 15px;
+    color: #20BC7E;
+
+}
+
+main div p {
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* achievement */
+
+/* .achievement{
+    display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 200px;
+} */
+
+#card1{
+    width: 200px;
+    height: 100px;
+    gap: 10px;
+    padding: 15px  50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    position: absolute;
+    top: 700px;
+left: 80px;
+
+}
+
+#card2{
+    width: 200px;
+    height: 100px;
+    gap: 10px;
+    padding: 15px  50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    position: absolute;
+    top: 850px;
+    left: 80px;
+}
+
+#card3{
+    width: 200px;
+    height: 100px;
+    gap: 10px;
+    padding: 15px  50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    position: absolute;
+    top: 1000px;
+    left: 80px;
+    bottom: 100px;
+}
+
+.card span{
+    color: #20BC7E;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.card  p{
+    font-size: 22px;
+    font-weight: 500;
+
+}
+
+}
+  

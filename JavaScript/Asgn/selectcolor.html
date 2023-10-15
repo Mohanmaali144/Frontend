@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Color Selector</title>
+    <style>
+        #container {
+            height: 400px;
+            width: 100%;
+            background-color: aquamarine;
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+
+        }
+
+
+        #colorDiv {
+            width: 200px;
+            height: 200px;
+            /* margin: 0 auto;
+            margin-top: 20px; */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Color Selector</h1>
+
+    <div id="container">
+
+
+        <div id="colorDiv"></div>
+        <select id="colorSelect">
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+        </select>
+
+        <script>
+
+            function changeColor() {
+                var colorSelect = document.getElementById('colorSelect');
+                var selectedColor = colorSelect.options[colorSelect.selectedIndex].value;
+                document.getElementById('colorDiv').style.backgroundColor = selectedColor;
+            }
+
+            document.getElementById('colorSelect').addEventListener('change', changeColor);
+            changeColor();
+
+
+        </script>
+</body>
+
+</html>

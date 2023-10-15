@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #image-container {
+            width: 300px;
+        }
+
+        #swap-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        #swap-button {
+            margin-top: 10px;
+            cursor: pointer;
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="image-container">
+        <img id="swap-image" src="./Img/imagescar1.jpeg" alt="Image 1">
+    </div>
+
+    <button id="swap-button" onclick="swapImage()">Swap Image</button>
+    <script>
+        function swapImage() {
+            const imageElement = document.getElementById('swap-image');
+            const currentImage = imageElement.getAttribute('src');
+
+            if (currentImage === './Img/imagescar1.jpeg') {
+                imageElement.setAttribute('src', './Img/car2.jpeg');
+                imageElement.setAttribute('alt', './Img/car2.jpeg');
+            } else {
+                imageElement.setAttribute('src', './Img/car3.jpeg');
+                imageElement.setAttribute('alt', 'Image 2');
+            }
+        }
+    </script>
+</body>
+
+</html>

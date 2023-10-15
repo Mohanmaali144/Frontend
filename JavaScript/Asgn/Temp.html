@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Product Table</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 80%;
+      margin: 20px auto;
+    }
+    th, td {
+      border: 1px solid #000;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>Serial Number</th>
+        <th>Category</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <th>Amount</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="serial">1</span></td>
+        <td>
+          <span class="category">Shoap</span>
+        </td>
+        <td><input type="number" name="quantity[]" min="1" oninput="calculateAmount(this)"></td>
+        <td><input type="number" name="price[]" min="0" step="0.01" oninput="calculateAmount(this)"></td>
+        <td><span class="amount">0</span></td>
+      </tr>
+      <tr>
+        <td><span class="serial">2</span></td>
+        <td>
+          <span class="category">Box</span>
+        </td>
+        <td><input type="number" name="quantity[]" min="1" oninput="calculateAmount(this)"></td>
+        <td><input type="number" name="price[]" min="0" step="0.01" oninput="calculateAmount(this)"></td>
+        <td><span class="amount">0</span></td>
+      </tr>
+      <tr>
+        <td><span class="serial">3</span></td>
+        <td>
+          <span class="category">Cream</span>
+        </td>
+        <td><input type="number" name="quantity[]" min="1" oninput="calculateAmount(this)"></td>
+        <td><input type="number" name="price[]" min="0" step="0.01" oninput="calculateAmount(this)"></td>
+        <td><span class = "amount">0</span></td>
+      </tr>
+    </tbody>
+  </table>
+  <label for="gstRate">GST Rate (%):</label>
+  <input type="number" id="gstRate" min="0" step="0.01" oninput="calculateTotal()">
+  <p>Total (including GST): <span id="total">0</span></p>
+  <button id="addRow">Add Row</button>
+
+  <script>
+    let serialNumber = 3;
+
+    function calculateAmount(input) {
+      const row = input.parentNode.parentNode;
+      const quantity = row.querySelector('[name="quantity[]"]').value;
+      const price = row.querySelector('[name="price[]"]').value;
+      const amount = (quantity * price).toFixed(2);
+      row.querySelector('.amount').textContent = amount;
+      calculateTotal();
+    }
+
+    function calculateTotal() {
+      const rows = document.querySelectorAll("#productTable tbody tr");
+      let subTotal = 0;
+
+      rows.forEach(row => {
+        const amount = parseFloat(row.querySelector('.amount').textContent);
+        subTotal += amount;
+      });
+
+      const gstRate = parseFloat(document.getElementById("gstRate").value) || 0;
+      const gstAmount = (subTotal * (gstRate / 100)).toFixed(2);
+      const total = (subTotal + parseFloat(gstAmount)).toFixed(2);
+      
+      document.getElementById("total").textContent = total;
+    }
+
+    document.getElementById("addRow").addEventListener("click", function() {
+      const table = document.querySelector("#productTable tbody");
+      const newRow = table.insertRow(table.rows.length);
+      newRow.innerHTML = `
+        <td><span class="serial">${++serialNumber}</span></td>
+        <td>
+          <span class="category">Category</span>
+        </td>
+        <td><input type="number" name="quantity[]" min="1" oninput="calculateAmount(this)"></td>
+        <td><input type="number" name="price[]" min="0" step="0.01" oninput="calculateAmount(this)"></td>
+        <td><span class="amount">0.00</span></td>
+      `;
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div id="myDiv">Hover</div>
+
+    <script>
+        var div = document.getElementById("myDiv");
+        div.addEventListener("mouseover", function () {
+            div.style.backgroundColor = "red";
+        });
+        div.addEventListener("mouseout", function () {
+            div.style.backgroundColor = "white";
+        });
+    </script>
+</body>
+
+</html>

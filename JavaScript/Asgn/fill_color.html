@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fill a Div with Color</title>
+    <style>
+        #colorDiv {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Fill a Div with Color</h1>
+
+    <div id="colorDiv"></div>
+
+    <button id="fillRed" onclick="fillDivWithColor('red')">Fill with Red</button>
+    <button id="fillBlue" onclick="fillDivWithColor('blue')">Fill with Blue</button>
+    <button id="fillGreen" onclick="fillDivWithColor('green')">Fill with Green</button>
+
+    <script>
+
+        function fillDivWithColor(color) {
+            document.getElementById('colorDiv').style.backgroundColor = color;
+        }
+    </script>
+</body>
+
+</html>

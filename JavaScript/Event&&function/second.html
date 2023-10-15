@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #demo {
+
+            font-size: 30px;
+            color: blue;
+            width: 100%;
+            /* display: block; */
+            /* background-color: rgb(165, 170, 174); */
+        }
+    </style>
+    <script>
+
+        function get() {
+
+            var t = new Date();
+            document.getElementById("demo").innerHTML = t.toLocaleTimeString();
+        }
+        setInterval(get, 100);
+    </script>
+
+
+</head>
+
+<body>
+    <!-- <button id="btn" onclick="get()">click</button> -->
+
+    <marquee behavior="" direction=""><span id="demo"></span></marquee>
+</body>
+
+</html>

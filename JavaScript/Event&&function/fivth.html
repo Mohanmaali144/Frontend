@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <script>
+
+        function temp() {
+
+            var passwordElement = document.getElementById('pass');
+
+            if (passwordElement.type == "password") {
+                passwordElement.type = "text";
+
+            }
+            else {
+
+                passwordElement.type = "password";
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+
+
+    <button onfocus="temp()">Read-me</button>
+    <input type="password" id="pass" placeholder="Enter a password ">
+
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Color Selector</title>
+    <style>
+        .color-div {
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            display: inline-block;
+        }
+    </style>
+
+    <!-- mohan maali -->
+</head>
+
+<body>
+    <h1>Color Selector</h1>
+
+    <div class="color-div" id="colorDiv1" style="background-color: red;"></div>
+    <select id="colorSelect1">
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+    </select>
+
+    <div class="color-div" id="colorDiv2" style="background-color: blue;"></div>
+    <select id="colorSelect2">
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+    </select>
+
+    <div class="color-div" id="colorDiv3" style="background-color: green;"></div>
+    <select id="colorSelect3">
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+    </select>
+
+    <script>
+
+        function changeColor(divId, selectId) {
+            var colorSelect = document.getElementById(selectId);
+            var selectedColor = colorSelect.options[colorSelect.selectedIndex].value;
+            var div = document.getElementById(divId);
+            div.style.backgroundColor = selectedColor;
+        }
+
+
+        document.getElementById('colorSelect1').addEventListener('change', function () {
+            changeColor('colorDiv1', 'colorSelect1');
+        });
+        document.getElementById('colorSelect2').addEventListener('change', function () {
+            changeColor('colorDiv2', 'colorSelect2');
+        });
+        document.getElementById('colorSelect3').addEventListener('change', function () {
+            changeColor('colorDiv3', 'colorSelect3');
+        });
+    </script>
+</body>
+
+</html>
