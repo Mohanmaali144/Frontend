@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation Bar</title>
+    <style>
+        /* Hide the checkbox input */
+        #toggle {
+            display: none;
+        }
+
+        /* Style for the hamburger icon */
+        .icon {
+            background-color: #333;
+            color: #fff;
+            cursor: pointer;
+            display: block;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Style for the navigation links */
+        .navbar {
+            background-color: #333;
+            color: #fff;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            max-height: 0;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /* Display the navigation links when the checkbox is checked */
+        #toggle:checked + .navbar {
+            max-height: 200px; /* Adjust to your needs */
+        }
+
+        @media screen and (max-width: 600px) {
+            .navbar {
+                display: block;
+                max-height: none;
+            }
+            .navbar a {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="toggle">
+    <label class="icon" for="toggle">&#9776;</label>
+
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </div>
+</body>
+</html>
